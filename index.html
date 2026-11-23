@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Portfolio de Saverio Bonfardeci — Game Designer, Level Designer et développeur Unity / C#.">
+  <title>BONFARDECI Saverio — Game Developer & Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Lexend:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain"></div><canvas id="embers" aria-hidden="true"></canvas>
+  <header class="topbar">
+    <a class="monogram" href="#home" aria-label="Accueil">SB<span>.</span></a>
+    <nav class="goo-nav" aria-label="Navigation principale">
+      <span class="nav-blob"></span>
+      <a class="nav-link active" href="#projects" data-section="projects"><span data-fr="Projets" data-en="Projects">Projets</span></a>
+      <a class="nav-link" href="#level-design" data-section="level-design"><span>Level Design</span></a>
+      <a class="nav-link" href="#systems" data-section="systems"><span data-fr="Systèmes" data-en="Systems">Systèmes</span></a>
+    </nav>
+    <button class="lang-switch" id="langToggle" type="button" aria-label="Switch language">EN <i>↗</i></button>
+  </header>
+
+  <main id="home">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span><span data-fr="PORTFOLIO • GAME DEVELOPMENT" data-en="PORTFOLIO • GAME DEVELOPMENT">PORTFOLIO • GAME DEVELOPMENT</span></p>
+        <h1 class="hero-title" data-tech="BONFARDECI Saverio">BONFARDECI <em>Saverio</em></h1>
+        <p class="hero-role" data-fr="Game Designer · Level Designer · Développeur Unity / C#" data-en="Game Designer · Level Designer · Unity / C# Developer">Game Designer · Level Designer · Développeur Unity / C#</p>
+        <p class="hero-intro" data-fr="J'aime concevoir des expériences de jeu, imaginer des mécaniques lisibles et leur donner vie grâce au code. Du game design à l'architecture des systèmes, je cherche à comprendre chaque couche de fabrication d'un jeu." data-en="I love designing game experiences, shaping readable mechanics and bringing them to life through code. From game design to system architecture, I enjoy understanding every layer of game development.">J'aime concevoir des expériences de jeu, imaginer des mécaniques lisibles et leur donner vie grâce au code. Du game design à l'architecture des systèmes, je cherche à comprendre chaque couche de fabrication d'un jeu.</p>
+        <div class="hero-actions"><a class="button button-hot" href="#projects" data-fr="Découvrir mes projets" data-en="Explore my projects">Découvrir mes projets <span>↘</span></a><a class="text-link" href="https://www.linkedin.com/in/saverio-bonfardeci-96190b261/" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+      </div>
+      <div class="hero-bottom"><span>BASED IN FRANCE</span><span>UNITY · C# · UNREAL · BLENDER</span><span>SCROLL TO EXPLORE ↓</span></div>
+    </section>
+
+    <section class="skills section-shell" aria-labelledby="skills-title">
+      <div class="section-kicker"><span>00 / INTRO</span><span data-fr="CE QUE J'APPORTE" data-en="WHAT I BRING">CE QUE J'APPORTE</span></div>
+      <div class="skills-heading"><h2 id="skills-title" data-fr="ENTRE CRÉATIVITÉ<br>ET TECHNIQUE" data-en="WHERE CREATIVITY<br>MEETS TECH">ENTRE CRÉATIVITÉ<br>ET TECHNIQUE</h2><p data-fr="Une approche polyvalente du jeu vidéo : comprendre l'expérience joueur, structurer les idées et construire les outils qui les rendent possibles." data-en="A versatile approach to game development: understand the player experience, structure ideas and build the tools that make them possible.">Une approche polyvalente du jeu vidéo : comprendre l'expérience joueur, structurer les idées et construire les outils qui les rendent possibles.</p></div>
+      <div class="skill-grid">
+        <article class="skill-card"><span class="skill-index">01</span><div class="skill-icon">⌘</div><h3>GAME DESIGN</h3><p data-fr="Conception de mécaniques, boucles de gameplay, documentation et cohérence d'expérience." data-en="Mechanics, gameplay loops, documentation and cohesive player experiences.">Conception de mécaniques, boucles de gameplay, documentation et cohérence d'expérience.</p><div class="tags"><span>Gameplay</span><span>Documentation</span><span>Balancing</span></div></article>
+        <article class="skill-card"><span class="skill-index">02</span><div class="skill-icon">⌖</div><h3>LEVEL DESIGN</h3><p data-fr="Construction d'espaces, rythme de progression, guidage du joueur et narration environnementale." data-en="Space construction, pacing, player guidance and environmental storytelling.">Construction d'espaces, rythme de progression, guidage du joueur et narration environnementale.</p><div class="tags"><span>Blockout</span><span>Flow</span><span>Unity</span></div></article>
+        <article class="skill-card"><span class="skill-index">03</span><div class="skill-icon">{ }</div><h3>DEVELOPMENT</h3><p data-fr="Programmation C#, architecture de systèmes, outils Unity et intégration gameplay." data-en="C# programming, system architecture, Unity tools and gameplay implementation.">Programmation C#, architecture de systèmes, outils Unity et intégration gameplay.</p><div class="tags"><span>C#</span><span>Unity</span><span>Blueprints</span></div></article>
+        <article class="skill-card"><span class="skill-index">04</span><div class="skill-icon">◈</div><h3>PRODUCTION</h3><p data-fr="Organisation d'équipe, suivi des tâches, coordination et adaptation aux contraintes du projet." data-en="Team organization, task tracking, coordination and adapting to project constraints.">Organisation d'équipe, suivi des tâches, coordination et adaptation aux contraintes du projet.</p><div class="tags"><span>Teamwork</span><span>Planning</span><span>Agile</span></div></article>
+      </div>
+      <div class="toolbelt"><span>TOOLS /</span><b>C#</b><b>Unity</b><b>Unreal Engine</b><b>Blueprints</b><b>GitHub</b><b>Blender</b><b>Roblox Studio</b></div>
+    </section>
+
+    <div class="album-viewport" id="portfolioAlbum" aria-label="Portfolio sections">
+      <div class="album-track" id="albumTrack">
+    <section class="portfolio-section album-page is-active" id="projects">
+      <div class="section-kicker"><span>01 / SELECTED WORK</span><span data-fr="PROJETS" data-en="PROJECTS">PROJETS</span></div>
+      <div class="section-title-row"><h2 data-fr="MES PROJETS" data-en="MY PROJECTS">MES PROJETS</h2><p data-fr="Des projets d'étude aux créations personnelles, chaque expérience m'a permis d'explorer une nouvelle facette du développement." data-en="From academic work to personal creations, each project helped me explore a new side of game development.">Des projets d'étude aux créations personnelles, chaque expérience m'a permis d'explorer une nouvelle facette du développement.</p></div>
+      <div class="project-tabs" role="group" aria-label="Filtrer les projets"><button class="filter active" data-filter="all" data-fr="Tout voir" data-en="All projects">Tout voir</button><button class="filter" data-filter="study" data-fr="Études" data-en="Academic">Études</button><button class="filter" data-filter="jam">Game Jam</button><button class="filter" data-filter="personal" data-fr="Personnel" data-en="Personal">Personnel</button></div>
+      <div class="project-grid">
+        <article class="project-card project-wide" data-type="study"><a class="project-image" href="https://viviwise.itch.io/la-casa-leone" target="_blank" rel="noreferrer"><img src="https://img.itch.zone/aW1nLzI3NDExMDM5LnBuZw==/original/MZXQZ8.png" alt="Visuel de La Casa Leone"><span class="image-open">VIEW PROJECT ↗</span></a><div class="project-info"><div class="project-meta"><span>PROJECT 01</span><span class="project-type" data-fr="PROJET D'ÉTUDE" data-en="ACADEMIC PROJECT">PROJET D'ÉTUDE</span></div><h3>LA CASA LEONE</h3><p data-fr="Un jeu coopératif de gestion dans un restaurant italien, réalisé en partenariat avec l'APEL du Rhône pour sensibiliser au harcèlement scolaire." data-en="A cooperative restaurant-management game, created with APEL du Rhône to raise awareness about school bullying.">Un jeu coopératif de gestion dans un restaurant italien, réalisé en partenariat avec l'APEL du Rhône pour sensibiliser au harcèlement scolaire.</p><div class="role-line"><b data-fr="MON RÔLE" data-en="MY ROLE">MON RÔLE</b><span>Producer · Lead Dev · Game Designer</span></div><a class="project-link" href="https://viviwise.itch.io/la-casa-leone" target="_blank" rel="noreferrer">ITCH.IO ↗</a></div></article>
+        <article class="project-card" data-type="study"><a class="project-image" href="https://zaveri0.itch.io/claydolls" target="_blank" rel="noreferrer"><img src="https://img.itch.zone/aW1nLzI1NDg4NDUxLnBuZw==/original/4595p4.png" alt="Visuel de Claydolls"><span class="image-open">VIEW PROJECT ↗</span></a><div class="project-info"><div class="project-meta"><span>PROJECT 02</span><span class="project-type" data-fr="PROJET D'ÉTUDE" data-en="ACADEMIC PROJECT">PROJET D'ÉTUDE</span></div><h3>CLAYDOLLS</h3><p data-fr="Une aventure narrative où les masques d'argile modifient les relations avec les habitants d'un village maudit." data-en="A narrative adventure where clay masks change how the player interacts with the inhabitants of a cursed village.">Une aventure narrative où les masques d'argile modifient les relations avec les habitants d'un village maudit.</p><div class="role-line"><b data-fr="MON RÔLE" data-en="MY ROLE">MON RÔLE</b><span>Lead Dev · Game Designer · Level Designer</span></div><a class="project-link" href="https://zaveri0.itch.io/claydolls" target="_blank" rel="noreferrer">ITCH.IO ↗</a></div></article>
+        <article class="project-card" data-type="jam"><a class="project-image" href="https://dearpico.itch.io/bas-les-masques" target="_blank" rel="noreferrer"><img src="https://img.itch.zone/aW1nLzI1NDE5MTUzLnBuZw==/original/F38zbQ.png" alt="Visuel de Bas Les Masques"><span class="image-open">VIEW PROJECT ↗</span></a><div class="project-info"><div class="project-meta"><span>PROJECT 03</span><span class="project-type">GLOBAL GAME JAM</span></div><h3>BAS LES MASQUES</h3><p data-fr="Un jeu de cartes tactique solo basé sur les combos, la gestion d'une réserve et des masques aux pouvoirs singuliers." data-en="A tactical solo card game built around combos, resource management and masks with unique powers.">Un jeu de cartes tactique solo basé sur les combos, la gestion d'une réserve et des masques aux pouvoirs singuliers.</p><div class="role-line"><b data-fr="MON RÔLE" data-en="MY ROLE">MON RÔLE</b><span data-fr="Développeur" data-en="Developer">Développeur</span></div><a class="project-link" href="https://dearpico.itch.io/bas-les-masques" target="_blank" rel="noreferrer">ITCH.IO ↗</a></div></article>
+        <article class="project-card project-wide" data-type="personal"><a class="project-image roblox-art" href="https://www.roblox.com/fr/games/112745555408543/KNIGHTFIGHT-Tower-Defense-M-di-val" target="_blank" rel="noreferrer"><div class="roblox-studio-brand"><span class="roblox-studio-icon" aria-hidden="true"></span><strong>ROBLOX</strong><b>STUDIO</b></div><span class="image-open">PLAY ON ROBLOX ↗</span></a><div class="project-info"><div class="project-meta"><span>PROJECT 04</span><span class="project-type" data-fr="PROJET PERSONNEL" data-en="PERSONAL PROJECT">PROJET PERSONNEL</span></div><h3>KNIGHTFIGHT</h3><p data-fr="Un projet Roblox médiéval développé en autonomie. De la conception à la réalisation, j'ai pris en charge l'ensemble du projet." data-en="A medieval Roblox project developed independently. I handled the complete project, from concept to implementation.">Un projet Roblox médiéval développé en autonomie. De la conception à la réalisation, j'ai pris en charge l'ensemble du projet.</p><div class="role-line"><b data-fr="MON RÔLE" data-en="MY ROLE">MON RÔLE</b><span data-fr="Développement complet en solo" data-en="Sole developer — full project">Développement complet en solo</span></div><a class="project-link" href="https://www.roblox.com/fr/games/112745555408543/KNIGHTFIGHT-Tower-Defense-M-di-val" target="_blank" rel="noreferrer">ROBLOX ↗</a></div></article>
+      </div>
+    </section>
+
+    <section class="portfolio-section album-page" id="level-design">
+      <div class="section-kicker"><span>02 / SPATIAL DESIGN</span><span>LEVEL DESIGN</span></div>
+      <div class="section-title-row"><h2 data-fr="CONSTRUIRE<br>DES MONDES" data-en="BUILDING<br>WORLDS">CONSTRUIRE<br>DES MONDES</h2><p data-fr="Un espace de jeu doit raconter, guider et donner envie d'explorer. Cette section accueillera mes analyses, blockouts et captures de niveaux." data-en="A game space should tell a story, guide the player and invite exploration. This section will showcase my level breakdowns, blockouts and environment captures.">Un espace de jeu doit raconter, guider et donner envie d'explorer. Cette section accueillera mes analyses, blockouts et captures de niveaux.</p></div>
+      <div class="ld-feature"><div class="ld-placeholder"><div class="crosshair">＋</div><span>LEVEL DESIGN / WORK IN PROGRESS</span><small data-fr="EMPLACEMENT POUR TES SCREENSHOTS & GIF" data-en="SPACE FOR YOUR SCREENSHOTS & GIF">EMPLACEMENT POUR TES SCREENSHOTS & GIF</small></div><div class="ld-notes"><span class="orange-label">FIELD NOTES / 001</span><h3 data-fr="DE L'IDÉE À L'ESPACE JOUABLE." data-en="FROM IDEA TO PLAYABLE SPACE.">DE L'IDÉE À L'ESPACE JOUABLE.</h3><p data-fr="Pour chaque niveau, je présenterai l'intention de design, les objectifs du joueur, le parcours, le rythme et les choix de composition. Des visuels annotés et un GIF viendront illustrer le résultat." data-en="For each level, I'll explain the design intent, player objectives, route, pacing and composition choices. Annotated visuals and a GIF will illustrate the result.">Pour chaque niveau, je présenterai l'intention de design, les objectifs du joueur, le parcours, le rythme et les choix de composition. Des visuels annotés et un GIF viendront illustrer le résultat.</p><ul><li data-fr="Intentions & objectifs" data-en="Design intent & objectives">Intentions & objectifs</li><li data-fr="Blockout & circulation" data-en="Blockout & player flow">Blockout & circulation</li><li data-fr="Rythme & narration environnementale" data-en="Pacing & environmental storytelling">Rythme & narration environnementale</li></ul></div></div>
+    </section>
+
+    <section class="portfolio-section album-page" id="systems">
+      <div class="section-kicker"><span>03 / UNDER THE HOOD</span><span data-fr="PROGRAMMATION" data-en="PROGRAMMING">PROGRAMMATION</span></div>
+      <div class="section-title-row"><h2 data-fr="SYSTEMS" data-en="SYSTEMS">SYSTEMS</h2><p data-fr="Les mécaniques derrière l'expérience. Chaque système aura sa propre fiche : démonstration, objectif, fonctionnement et aperçu technique." data-en="The mechanics behind the experience. Every system gets its own breakdown: demo, purpose, inner workings and technical overview.">Les mécaniques derrière l'expérience. Chaque système aura sa propre fiche : démonstration, objectif, fonctionnement et aperçu technique.</p></div>
+      <div class="systems-grid systems-grid-real">
+        <article class="system-card" data-system-card="thermal">
+          <div class="system-top"><span>SYS / 001</span><span class="system-status">UNITY · C#</span></div>
+          <div class="system-preview"><video controls preload="metadata" playsinline src="assets/videos/thermal-simulation-01.mp4"></video><span class="video-caption">THERMAL SIMULATION / DEMO 01</span></div>
+          <h3 data-fr="SIMULATION THERMIQUE" data-en="THERMAL SIMULATION">SIMULATION THERMIQUE</h3>
+          <p data-fr="Un système modulaire d'états et de propagation : chaleur, humidité et électricité influencent les éléments du monde et leurs effets visuels." data-en="A modular state and propagation system: heat, humidity and electricity influence world elements and their visual effects.">Un système modulaire d'états et de propagation : chaleur, humidité et électricité influencent les éléments du monde et leurs effets visuels.</p>
+          <div class="tags"><span>ElementSimulation</span><span>IElementState</span><span>Propagation&lt;T&gt;</span><span>Object Pooling</span></div>
+          <button class="details-button" data-system="thermal" data-fr="Explorer le système ↗" data-en="Explore system ↗">Explorer le système ↗</button>
+        </article>
+        <article class="system-card" data-system-card="controller">
+          <div class="system-top"><span>SYS / 002</span><span class="system-status">UNITY · C#</span></div>
+          <div class="system-preview"><video controls preload="metadata" playsinline src="assets/videos/character-controller.mp4"></video><span class="video-caption">CHARACTER CONTROLLER / DEMO</span></div>
+          <h3 data-fr="CHARACTER CONTROLLER" data-en="CHARACTER CONTROLLER">CHARACTER CONTROLLER</h3>
+          <p data-fr="Un contrôleur réutilisable et modulaire qui centralise les déplacements, analyse l'environnement et active des aptitudes spécialisées." data-en="A reusable, modular controller that centralizes movement, analyzes the environment and activates specialized abilities.">Un contrôleur réutilisable et modulaire qui centralise les déplacements, analyse l'environnement et active des aptitudes spécialisées.</p>
+          <div class="tags"><span>CharacterSetup</span><span>IAptitude</span><span>Vault</span><span>ScriptableObject</span></div>
+          <button class="details-button" data-system="controller" data-fr="Explorer le système ↗" data-en="Explore system ↗">Explorer le système ↗</button>
+        </article>
+        <article class="system-card" data-system-card="ai">
+          <div class="system-top"><span>SYS / 003</span><span class="system-status">UNITY · C#</span></div>
+          <div class="system-preview"><video controls preload="metadata" playsinline src="assets/videos/ai-chase-search.mp4"></video><span class="video-caption">INFILTRATION AI / CHASE & SEARCH</span></div>
+          <h3 data-fr="IA D'INFILTRATION" data-en="STEALTH AI SYSTEM">IA D'INFILTRATION</h3>
+          <p data-fr="Une architecture d'IA à aptitudes modulaires : perception par vision et audition, détection progressive, états prioritaires et gestion des situations." data-en="A modular-ability AI architecture: vision and hearing perception, layered detection, prioritized states and situation handling.">Une architecture d'IA à aptitudes modulaires : perception par vision et audition, détection progressive, états prioritaires et gestion des situations.</p>
+          <div class="tags"><span>BrainPnj</span><span>PnjAptitude</span><span>VisionCone</span><span>IPnjStates</span></div>
+          <button class="details-button" data-system="ai" data-fr="Explorer le système ↗" data-en="Explore system ↗">Explorer le système ↗</button>
+        </article>
+      </div>
+      <p class="systems-note" data-fr="Trois systèmes développés sous Unity / C#, présentés à travers leur architecture, leurs choix techniques et leurs démonstrations en jeu." data-en="Three systems built with Unity / C#, presented through their architecture, technical decisions and in-game demonstrations.">Trois systèmes développés sous Unity / C#, présentés à travers leur architecture, leurs choix techniques et leurs démonstrations en jeu.</p>
+    </section>
+
+      </div>
+      <nav class="folder-tabs" aria-label="Choisir une section du portfolio">
+        <button class="folder-tab is-active" type="button" data-page="0" aria-selected="true">
+          <span>01</span><strong data-fr="PROJETS" data-en="PROJECTS">PROJETS</strong>
+        </button>
+        <button class="folder-tab" type="button" data-page="1" aria-selected="false">
+          <span>02</span><strong>LEVEL DESIGN</strong>
+        </button>
+        <button class="folder-tab" type="button" data-page="2" aria-selected="false">
+          <span>03</span><strong data-fr="SYSTÈMES" data-en="SYSTEMS">SYSTÈMES</strong>
+        </button>
+      </nav>
+      <div class="album-controls" aria-label="Navigation entre les pages">
+        <button class="album-arrow" id="albumPrev" type="button" aria-label="Page précédente">←</button>
+        <div class="album-progress"><span id="albumPageNumber">01</span><span class="album-progress-line"><i id="albumProgressFill"></i></span><span>03</span></div>
+        <button class="album-arrow" id="albumNext" type="button" aria-label="Page suivante">→</button>
+      </div>
+      <div class="album-hint" data-fr="GLISSER POUR CHANGER DE PAGE" data-en="SWIPE TO TURN THE PAGE">GLISSER POUR CHANGER DE PAGE</div>
+    </div>
+
+    <section class="contact section-shell" id="contact"><div class="section-kicker"><span>04 / GET IN TOUCH</span><span data-fr="CONTACT" data-en="CONTACT">CONTACT</span></div><h2 data-fr="ON CONSTRUIT<br>QUELQUE CHOSE ?" data-en="LET'S BUILD<br>SOMETHING ?">ON CONSTRUIT<br>QUELQUE CHOSE ?</h2><div class="contact-bottom"><p data-fr="Pour parler jeu vidéo, collaborer ou simplement échanger." data-en="For game dev discussions, collaborations or just a chat.">Pour parler jeu vidéo, collaborer ou simplement échanger.</p><a class="button button-hot" href="mailto:saveriobonf@gmail.com">saveriobonf@gmail.com ↗</a></div></section>
+  </main>
+  <footer><a class="monogram" href="#home">SB<span>.</span></a><span>© <span id="year"></span> BONFARDECI Saverio</span><span>DESIGNED TO PLAY / BUILT TO CREATE</span><a href="#home">BACK TO TOP ↑</a></footer>
+
+  <dialog id="systemDialog" class="system-dialog"><button class="dialog-close" aria-label="Close">×</button><span class="orange-label" id="dialogEyebrow">SYSTEM / BREAKDOWN</span><h2 id="dialogTitle">SYSTEM</h2><p id="dialogText"></p><div class="dialog-code" id="dialogCode"></div><h3 class="dialog-video-title" data-fr="DÉMONSTRATIONS VIDÉO" data-en="VIDEO DEMOS">DÉMONSTRATIONS VIDÉO</h3><div class="dialog-videos" id="dialogVideos"></div></dialog>
+  <script src="script.js"></script>
+</body></html>

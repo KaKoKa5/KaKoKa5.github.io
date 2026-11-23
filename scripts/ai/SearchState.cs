@@ -1,0 +1,79 @@
+using System.Collections.Generic;
+using Goblfin.PnjSystem.Utilities;
+using PrimeTween;
+using UnityEngine;
+
+namespace Goblfin.PnjSystem
+{
+    public class SearchState : IPnjStates
+    {
+	    public StatePriority Priority => StatePriority.Searching;
+       public float AgentSpeed => GameMetrix.GuardPatrolSpeed;
+       private float timer;
+       private BrainPnj guard;
+       private int currentSearchIndex;
+       private Vector3 lastTargetPos;
+       private List<Vector3> searchPoints = new List<Vector3>();
+       private bool isWaiting;
+
+       private int searchPointCount = GameMetrix.SearchPointCount;
+       public SearchState(BrainPnj guard, Vector3 lastTargetPos)
+       {
+          this.guard = guard;
+          this.lastTargetPos = lastTargetPos;
+       }
+
+       public void EnterState(BrainPnj brainPnj)
+       { 
+          timer = 0f;
+          currentSearchIndex = 0;
+          isWaiting = false;
+          
+          guard.Agent.speed = AgentSpeed;
+          searchPointCount += (int)brainPnj.Patience.CurrentPatienceType;
+          searchPoints = GameMetrix.SearchPointsGenerated(lastTargetPos, GameMetrix.SearchRadius, searchPointCount);
+
+          if (searchPoints.Count > 0)
+             brainPnj.Agent.SetDestination(searchPoints[0]);
+       }
+
+       public void UpdateState(BrainPnj brainPnj)
+       {
+          if (searchPoints.Count == 0)
+          {
+             brainPnj.PnjGoTo(new PatrolState(guard));
+             return;
+          }
+
+          if (isWaiting)
+          {
+             timer -= Time.deltaTime;
+             if (timer <= 0f)
+                GoToNextPoint(brainPnj);
+          }
+          else if (!brainPnj.Agent.pathPending && brainPnj.Agent.remainingDistance < 0.5f)
+          {
+             isWaiting = true;
+             timer = GameMetrix.SearchWaitPerPoint;
+          }
+       }
+
+       public void ExitState(BrainPnj brainPnj)
+       {
+          brainPnj.Patience.AddOrRemovePatience(-10);
+          guard.Agent.speed = GameMetrix.GuardPatrolSpeed;
+       }
+       
+       private void GoToNextPoint(BrainPnj brainPnj)
+       {
+          currentSearchIndex++;
+          if (currentSearchIndex >= searchPoints.Count)
+          {
+             brainPnj.PnjGoTo(new PatrolState(guard));
+             return;
+          }
+          isWaiting = false;
+          brainPnj.Agent.SetDestination(searchPoints[currentSearchIndex]);
+       }
+    }
+}
